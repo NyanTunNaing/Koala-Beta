@@ -1,0 +1,144 @@
+.contact--section{
+  width: 100%;
+  min-height: 45vh;
+  background-color: var(--color-light);
+}
+  
+.contact--box{
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+  
+.contact--box1,
+.contact--box2{
+  height: 40vh;
+  padding:  32px;
+  padding-left: 40px;
+  padding-right: 40px;
+  text-align: justify;  
+}
+  
+.contact--box1{
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+  
+.box1--content{
+  width: 90%;
+  height: 60%;
+}
+
+.box1--content p{
+  color: var(--color-sub);
+    line-height: 25px;
+}
+  
+.box1--social--links{
+  width: 100%;
+  height: 40%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.social--icon{
+    font-size: var(--fontsize-semilg);
+    color: var(--color-sub);
+    transition: all 0.5s;
+}
+
+.contact--box2{
+  width: 23%;
+}
+  
+.contact--heading{
+  width: 100%;
+  height: 25%;
+  color: var(--color-sub);
+  font-weight: var(--fontweight-bold);
+  font-size:var(--fontsize-small);
+  letter-spacing: 1px;
+}
+
+.contact--heading::after{
+  content: '';
+  display: block;
+  margin-top: 10px;
+  width: 30px;
+  height: 2.5px;
+  background-color: var(--color-main);
+}
+  
+.contact--nav--links,
+.info--content{
+  width: 100%;
+  height: 75%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: var(--color-sub);
+  font-size: var(--fontsize-exsmall);
+  font-weight: var(--fontweight-medium);
+  letter-spacing: 0.5px;
+}
+  
+.link{
+  color: var(--color-sub);
+  transition: all 0.5s;
+}
+  
+.link:hover{
+    color: var(--color-main);
+}
+  
+.contact--info{
+  width: 38%;
+  height: 40vh;
+  padding: 32px 40px;
+}
+
+.info--content a{
+  color: var(--color-sub);
+  font-size: var(--fontsize-exsmall);
+  letter-spacing: 1px;
+  line-height: 25px;
+  transition: all 0.5s;
+}
+
+.info--icon{
+  padding-right: 20px;
+  transition: all 0.5s;
+}
+  
+.info--content a:hover,
+.info--content a:hover .info--icon{
+  color: var(--color-main);
+}
+  
+.info--content a:hover .info--icon{
+  padding-right: 20px;
+}
+
+.footer--section{
+  width: 100%;
+  min-height: 70px;
+  background-color: var(--color-sub);
+  text-align: center;
+}
+
+.footer--section p{
+  width: 100%;
+  line-height: 70px;
+  font-size: var(--fontsize-small) !important;
+  color: var(--color-light);
+}

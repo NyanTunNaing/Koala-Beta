@@ -1,0 +1,124 @@
+.bouncher--section{
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    min-height: 100vh;
+    background: transparent;
+}
+
+.bouncher--section::after{
+    z-index: -1;
+    opacity: 0.1;
+    content: '';
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-image: url(../images/doodle.jpg);
+    background-repeat: repeat;
+}
+
+.bouncher--card{
+    position: relative;
+    width: 620px;
+    min-height: 300px;
+    padding: 60px 40px;
+    margin: 15vh auto 40px auto;
+    background-color: var(--color-light);
+    border: 2px solid var(--color-formBorder);
+    border-radius: 8px;
+    text-align: center;
+    z-index: 2;
+}
+
+.bouncher--card > img{
+    width: 50px;
+    height: 50px;
+}
+
+.bouncher--card > h3{
+    font-size: var(--fontsize-medium);
+    font-weight: var(--fontweight-bold);
+    color: var(--color-main);
+}
+
+.bouncher--items{
+    width: 500px;
+    height: auto;
+    padding: 25px;
+    margin: 20px auto;
+    border-bottom: 1.5px solid var(--color-sub);
+}
+
+.bouncher--item,
+.bouncher--heading{
+    width: 450px;
+    min-height: 70px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bouncher--item > h5,
+.bouncher--item > p,
+.bouncher--item > span,
+.bouncher--heading > h5,
+.bouncher--heading > p,
+.bouncher--heading >span{
+    font-size: var(--fontsize-exsmall);
+    font-weight: var(--fontweight-bold);
+    color: var(--color-sub);
+}
+
+.bouncher--item > h5,
+.bouncher--heading > h5{
+    width: 270px;
+    text-align: left;
+}
+
+.bouncher--item > p,
+.bouncher--heading > p{
+    width: 100px;
+}
+
+.bouncher--item > span,
+.bouncher--heading > span{
+    width: 60px;
+}
+
+.bouncher--card > span{
+    display: block;
+    width: 150px;
+    min-width: 100px;
+    margin-left: auto;
+    font-size: var(--fontsize-small);
+    font-weight: var(--fontweight-bold);
+    color: var(--color-sub);
+}
+
+.bouncher--card > p{
+    margin-top: 30px;
+}
+
+.bouncher--contact--container{
+    width: 250px;
+    height: 100px;
+    margin: 30px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.bouncher--contact--container > p{
+    font-size: var(--fontsize-exsmall);
+    font-weight: var(--fontweight-bold);
+    color: var(--color-sub);
+    cursor: pointer;
+}
+
+.bouncher--heading{
+    border-bottom: 1.5px dashed var(--color-sub);
+}

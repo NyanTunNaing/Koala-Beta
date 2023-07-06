@@ -1,0 +1,317 @@
+::selection{
+    background-color: var(--color-main);
+    color: var(--color-light);
+}
+
+.upbtn{
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    position: fixed;
+    z-index: 12;
+    right: -60px;
+    bottom: 60px;
+    background-color: var(--color-main);
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+}
+
+.upbtn > i{
+    color: var(--color-light);
+    font-size: var(--fontsize-semilg);
+    font-weight: var(--fontweight-bold);
+    line-height: 56px;
+    transition: all 0.5s ease-in-out;
+}
+
+.upbtn:hover{
+    border-radius: 15px;
+}
+
+.upbtn:hover > i{
+    transform: translateY(-3px);
+}
+
+.upbtn.open{
+    right: 60px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .upbtn{
+        display: none;
+    }
+}
+
+.btn--yellow{
+    cursor: pointer;
+    font-size: var(--fontsize-exsmall);
+    font-weight: var(--fontweight-medium);
+    color: var(--color-light);
+    background-color: var(--color-main);
+    text-transform: uppercase;
+    padding: 15px 45px;
+    border-radius: 30px;
+    letter-spacing: 0.5px;
+}
+
+.btn--transparent{
+    padding: 15px 40px;
+    font-size: var(--fontsize-exsmall);
+    font-weight: var(--fontweight-medium);
+    color: var(--color-light);
+    text-transform: uppercase;
+    border-radius: 30px;
+    border: 2px solid var(--color-light);
+    transition: all 0.5s;
+    background-color: transparent;
+}
+
+.vertical--heading h5{
+    color: var(--color-main);
+    font-size: var(--fontsize-exsmall);
+    font-weight: var(--fontweight-medium);
+    text-transform: uppercase;
+    word-spacing: 2px;
+    position: relative;
+    transform: rotate(-90deg);
+    display: inline-block;
+    top: 55px;
+    left: -60px;
+}
+
+.vertical--heading h2{
+    font-size: var(--fontsize-lg);
+    font-weight: var(--fontweight-exregular);
+    line-height: 45px;
+    margin: 0 0 30px 30px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px){
+    .vertical--heading h2{
+        margin-left: 25px;
+        font-size: var(--fontsize-semilg);
+    }
+}
+
+.span--sub--color{
+    font-weight: var(--fontweight-bold);
+    color: var(--color-sub);
+}
+
+.span--main--color{
+    font-weight: var(--fontweight-bold);
+    color: var(--color-main) !important;
+}
+
+.span--error__color{
+    font-size: var(--fontsize-semilg);
+    font-weight: var(--fontweight-bold);
+    color: var(--color-error) !important;
+}
+
+.btn--yellow--blur{
+    font-size: var(--fontsize-small);
+    color: var(--color-main);
+}
+
+.roll--arrow{
+    margin-left: 10px;
+    transition: all 1s;
+}
+
+.url--bold{
+    font-weight: var(--fontweight-bold);
+}
+
+.shop--features--btnActive{
+    color: var(--color-main);
+    background-color: var(--color-light-dark);
+}
+
+.fontNumber{
+    font-family: var(--font-number) !important;
+}
+
+.quote--left,
+.quote--right{
+    font-size: var(--fontsize-medium);
+}
+
+.quote--left{
+    margin-right: 10px;
+}
+
+.quote--right{
+    margin-left: 10px;
+}
+
+.active--btn,
+.active--btn1{
+    position: relative;
+    text-transform: uppercase;
+    font-size: var(--fontsize-exsmall);
+    font-weight: var(--fontweight-bold);
+    color: var(--color-sub);
+    padding-bottom: 3px;
+    border-bottom: 2.3px solid var(--color-sub);
+    transition: all 0.5s;
+}
+
+.active--btn::before{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 0%;
+    height: 2.3px;
+    background-color: var(--color-main);
+    bottom: -2.3px;
+    left: 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.active--btn:hover::before,
+.active--btn1:hover::before{
+    width: 100%;
+}
+
+.active--btn:hover,
+.active--btn1:hover{
+    color: var(--color-main);
+}
+
+.active--btn1::before{
+    content: '.';
+    display: block;
+    width: 0%;
+    height: 2.3px;
+    margin-inline: auto;
+    position: absolute;
+    bottom: -2.3px;
+    left: 0;
+    right: 0;
+    color: transparent;
+    background-color: var(--color-main);
+    transition: all 0.3s ease-in-out;
+}
+
+.animate--heart{
+    color: var(--color-heart);
+    animation: animatedHeart 1s infinite;
+}
+
+.back--icon{
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 50%;
+}
+
+.back--icon > i{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: var(--color-light-dark);
+    font-size: var(--fontsize-medium);
+    color: var(--color-main);
+}
+
+.smile--icon{
+    font-size: var(--fontsize-small);
+    font-weight: var(--fontweight-regular);
+    color: var(--color-main);
+}
+
+.color--light{
+    color: var(--color-light) !important;
+}
+
+.color--sub{
+    color: var(--color-sub) !important;
+}
+
+.color--main{
+    color: var(--color-main) !important;
+}
+
+.color--black{
+    width: 40px;
+    height: 40px;
+    border: 2px solid var(--color-main);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.color--black span{
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: var(--color-sub);
+}
+
+.size--portion{
+    color: var(--color-main);
+}
+
+.active--pagination{
+    border-radius: 10px !important;
+    color: var(--color-light) !important;
+    background-color: var(--color-form) !important;
+}
+
+.active--shop--nav{
+    background-color: var(--color-light-dark) !important;
+    color: var(--color-main) !important;
+}
+
+.back--btn{
+    font-size: var(--fontsize-small);
+    font-weight: var(--fontweight-bold);
+    transform: rotate(180deg);
+}
+
+@media screen and (max-width: 380px){
+    .back--btn--box{
+        top: 80px;
+    }
+}
+
+/* social icons */
+
+.facebook--icon,
+.instagram--icon,
+.telegram--icon,
+.twitter--icon,
+.google--icon,
+.email--icon{
+    transition: all 0.5s;
+}
+
+.facebook--icon:hover{
+    color: var(--color-facebook);
+}
+
+.instagram--icon:hover{
+    color: var(--color-instagram);
+}
+
+.telegram--icon:hover{
+    color: var(--color-telegram);
+}
+
+.twitter--icon:hover{
+    color: var(--color-twitter);
+}
+
+.google--icon:hover{
+    color: var(--color-google);
+}
+
+.email--icon:hover{
+    color: var(--color-main);
+}

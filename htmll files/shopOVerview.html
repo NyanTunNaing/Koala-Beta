@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="../uikits/images/favicon.png">
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Custom css -->
+    <link rel="stylesheet" href="../uikits/styles/uikit.css" />
+    <title>Koala Fashion Shop | Shop Overview</title>
+  </head>
+  <body>
+    <!-- Alert Messages -->
+    <div class="alert1 alert--success">
+      <p class="alert--message">This item is added to the cart.</p>
+      <button class="alert--close"><i class="fa-solid fa-circle-xmark"></i></button>
+    </div>
+    <div class="alert2 alert--comfirm">
+      <p class="alert--message">Please check carefully before billing.</p>
+      <span>|</span>
+      <button class="confirm--btn">Ok</button>
+      <button class="confirm--btn">Cancel</button>
+    </div>
+    <div class="alert3 alert--password--error">
+      <p class="alert--message">You have already added this item.</p>
+      <button class="alert--close"><i class="fa-solid fa-circle-xmark"></i></button>
+    </div>
+    <div class="alert4 alert--buy--error">
+      <p class="alert--message">You haven't chosen any items.</p>
+      <button class="alert--close"><i class="fa-solid fa-circle-xmark"></i></button>
+    </div>
+
+
+    <!-- header section -->
+    <header class="shop--header">
+      <div class="shop--logo--container">
+        <div class="shop--logo">
+          <i class="fa-solid fa-bars"></i>
+          <a href="../home.html"><img src="../uikits/images/main-logo.png" alt=""></a>
+        </div>
+        <div class="shop--search--container">
+          <a href="./login-signup.html" class="shop--login">Log in/Sign up</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- shop section -->
+    <section class="shop--section">
+      <div class="url--box">
+        <div class="url">
+          <p>
+            <a href="../home.html">Home</a>
+            <span>/</span>
+            <a href="" class="url--bold">shop</a>
+          </p>
+        </div>
+      </div>
+      <div class="shop--section--inner">
+        <div class="shop--wrapper">
+          <div class="shop--nav--box">
+            <div class="shop--nav">
+              <i class="fa-solid fa-xmark shopNav--close"></i>
+              <div class="shop--nav--firstPiroty">
+                <h3>Features</h3>
+                <div class="shop--features--inner--overall">
+                  <p data-btns="1" href="">New Arrivals</p>
+                  <p data-btns="2" href="">Best Sellers</p>
+                  <p data-btns="3" href="">Your Essentials</p>
+                </div>
+              </div>
+              <div class="shop--nav--common">
+                <h3>Items</h3>
+                <div class="shop--features--inner--overall">
+                  <p class="item--btns" href="">All items</p>
+                  <p class="item--btns" href="" data-btns="4">Sweaters</p>
+                  <p class="item--btns" href="" data-btns="5">Dresses</p>
+                  <p class="item--btns" href="" data-btns="6">Pants</p>
+                  <p class="item--btns" href="" data-btns="7">Jeans</p>
+                  <p class="item--btns" href="" data-btns="8">Coats and Jackets</p>
+                  <p class="item--btns" href="" data-btns="9">Tees</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clothes--card--container">
+            <!-- clothes card -->
+            <div class="clothes--card--wrapper">
+              <div class="clothes--card" data-cat="3" data-div="9">
+                  <div class="image--box">
+                    <a href="./clothDetail.html">
+                      <img class="product--img" src="../uikits/images/tee.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="cloth--rating">
+                    <i class="fa-solid fa-star color--main"></i>
+                    <i class="fa-solid fa-star color--main"></i>
+                    <i class="fa-solid fa-star color--main"></i>
+                    <i class="fa-solid fa-star color--main"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h3 class="product--title title">Tee 1</h3>
+                  <p class="cloth--price">$ <span class="fontNumber unit--price">25.03</span></p>
+                  <div class="cloth--colors">
+                    <div class="color--black">
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="clothes--card--actions">
+                    <a href="./tee1.html" class="active--btn cloth--card--btn">
+                      View Details
+                    </a>
+                    <p href="" class="clothes--card--buy"><i class="fa-solid fa-basket-shopping add--cart"></i></p>
+                  </div>
+              </div>
+              <div class="clothes--card" data-cat="2" data-div="9">
+                  <div class="image--box">
+                    <a href="./clothDetail.html">
+                      <img class="product--img" src="../uikits/images/tee2.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="cloth--rating">
+                    <i class="fa-solid fa-star color--main"></i>
+                    <i class="fa-solid fa-star color--main"></i>
+                    <i class="fa-solid fa-star color--main"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h3 class="title">Tee 2</h3>
+                  <p class="cloth--price">$ <span class="fontNumber unit--price">30.02</span></p>
+                  <div class="cloth--colors">
+                    <div class="color--black">
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="clothes--card--actions">
+                    <a href="./tee2.html" class="active--btn cloth--card--btn">
+                      View Details
+                    </a>
+                    <p href="" class="clothes--card--buy"><i class="fa-solid fa-basket-shopping add--cart"></i></p>
+                  </div>
+              </div>
+              <div class="clothes--card" data-cat="1" data-div="9">
+                <div class="image--box">
+                  <a href="./clothDetail.html">
+                    <img class="product--img" src="../uikits/images/tee3.jpg" alt="">
+                  </a>
+                </div>
+                <div class="cloth--rating">
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h3 class="title">Tee 3</h3>
+                <p class="cloth--price">$ <span class="fontNumber unit--price">37.7</span></p>
+                <div class="cloth--colors">
+                  <div class="color--black">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="clothes--card--actions">
+                  <a href="./tee3.html" class="active--btn cloth--card--btn">
+                    View Details
+                  </a>
+                  <p href="./shop.html" class="clothes--card--buy"><i class="fa-solid fa-basket-shopping add--cart"></i></p>
+                </div>
+              </div>
+              <div class="clothes--card" data-cat="3" data-div="8">
+                <div class="image--box">
+                  <a href="./clothDetail.html">
+                    <img class="product--img" src="../uikits/images/jacket.jpg" alt="">
+                  </a>
+                </div>
+                <div class="cloth--rating">
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h3 class="title">Jacket 1</h3>
+                <p class="cloth--price">$ <span class="fontNumber unit--price">40</span></p>
+                <div class="cloth--colors">
+                  <div class="color--black">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="clothes--card--actions">
+                  <a href="./coatJacket1.html" class="active--btn cloth--card--btn">
+                    View Details
+                  </a>
+                  <p href="" class="clothes--card--buy"><i class="fa-solid fa-basket-shopping add--cart"></i></p>
+                </div>
+              </div>
+              <div class="clothes--card" data-cat="2" data-div="8">
+                  <div class="image--box">
+                    <a href="./clothDetail.html">
+                      <img class="product--img" src="../uikits/images/jacket2.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="cloth--rating">
+                    <i class="fa-solid fa-star color--main"></i>
+                    <i class="fa-solid fa-star color--main"></i>
+                    <i class="fa-solid fa-star color--main"></i>
+                    <i class="fa-solid fa-star color--main"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h3 class="title">Jacket 2</h3>
+                  <p class="cloth--price">$ <span class="fontNumber unit--price">49.12</span></p>
+                  <div class="cloth--colors">
+                    <div class="color--black">
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="clothes--card--actions">
+                    <a href="./coatJacket2.html" class="active--btn cloth--card--btn">
+                      View Details
+                    </a>
+                    <p href="" class="clothes--card--buy"><i class="fa-solid fa-basket-shopping add--cart"></i></p>
+                  </div>
+              </div>
+              <div class="clothes--card" data-cat="1" data-div="8">
+                  <div class="image--box">
+                    <a href="./clothDetail.html">
+                      <img class="product--img" src="../uikits/images/jacket3.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="cloth--rating">
+                    <i class="fa-solid fa-star color--main"></i>
+                    <i class="fa-solid fa-star color--main"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h3 class="title">Jacket 3</h3>
+                  <p class="cloth--price">$ <span class="fontNumber unit--price">38</span></p>
+                  <div class="cloth--colors">
+                    <div class="color--black">
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="clothes--card--actions">
+                    <a href="./coatJacket3.html" class="active--btn cloth--card--btn">
+                      View Details
+                    </a>
+                    <p href="" class="clothes--card--buy"><i class="fa-solid fa-basket-shopping add--cart"></i></p>
+                  </div>
+              </div>
+              <div class="clothes--card" data-cat="3" data-div="7">
+                  <div class="image--box">
+                    <a href="./clothDetail.html">
+                      <img class="product--img" src="../uikits/images/jean2.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="cloth--rating">
+                    <i class="fa-solid fa-star color--main"></i>
+                    <i class="fa-solid fa-star color--main"></i>
+                    <i class="fa-solid fa-star color--main"></i>
+                    <i class="fa-solid fa-star color--main"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h3 class="title">Jean 1</h3>
+                  <p class="cloth--price">$ <span class="fontNumber unit--price">42</span></p>
+                  <div class="cloth--colors">
+                    <div class="color--black">
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="clothes--card--actions">
+                    <a href="./jean1.html" class="active--btn cloth--card--btn">
+                      View Details
+                    </a>
+                    <p href="" class="clothes--card--buy"><i class="fa-solid fa-basket-shopping add--cart"></i></p>
+                  </div>
+              </div>
+              <div class="clothes--card" data-cat="2" data-div="7">
+                  <div class="image--box">
+                    <a href="./clothDetail.html">
+                      <img class="product--img" src="../uikits/images/jean3.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="cloth--rating">
+                    <i class="fa-solid fa-star color--main"></i>
+                    <i class="fa-solid fa-star color--main"></i>
+                    <i class="fa-solid fa-star color--main"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                  <h3 class="title">Jean 2</h3>
+                  <p class="cloth--price">$ <span class="fontNumber unit--price">29.7</span></p>
+                  <div class="cloth--colors">
+                    <div class="color--black">
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="clothes--card--actions">
+                    <a href="./jean2.html" class="active--btn cloth--card--btn">
+                      View Details
+                    </a>
+                    <p href="" class="clothes--card--buy"><i class="fa-solid fa-basket-shopping add--cart"></i></p>
+                  </div>
+              </div>
+              <div class="clothes--card" data-cat="1" data-div="7">
+                  <div class="image--box">
+                    <a href="./clothDetail.html">
+                      <img class="product--img" src="../uikits/images/jean (2).jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="cloth--rating">
+                    <i class="fa-solid fa-star color--main"></i>
+                    <i class="fa-solid fa-star color--main"></i>
+                    <i class="fa-solid fa-star color--main"></i>
+                    <i class="fa-solid fa-star color--main"></i>
+                    <i class="fa-solid fa-star color--main"></i>
+                  </div>
+                  <h3 class="title">Jean 3</h3>
+                  <p class="cloth--price">$ <span class="fontNumber unit--price">46</span></p>
+                  <div class="cloth--colors">
+                    <div class="color--black">
+                      <span></span>
+                    </div>
+                  </div>
+                  <div class="clothes--card--actions">
+                    <a href="./jean3.html" class="active--btn cloth--card--btn">
+                      View Details
+                    </a>
+                    <p href="" class="clothes--card--buy"><i class="fa-solid fa-basket-shopping add--cart"></i></p>
+                  </div>
+              </div>
+              <div class="clothes--card" data-cat="3" data-div="4">
+                <div class="image--box">
+                  <a href="./clothDetail.html">
+                    <img class="product--img" src="../uikits/images/sweater.jpg" alt="">
+                  </a>
+                </div>
+                <div class="cloth--rating">
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h3 class="title">Sweater 1</h3>
+                <p class="cloth--price">$ <span class="fontNumber unit--price">30</span></p>
+                <div class="cloth--colors">
+                  <div class="color--black">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="clothes--card--actions">
+                  <a href="./sweater1.html" class="active--btn cloth--card--btn">
+                    View Details
+                  </a>
+                  <p href="" class="clothes--card--buy"><i class="fa-solid fa-basket-shopping add--cart"></i></p>
+                </div>
+              </div>
+              <div class="clothes--card" data-cat="2" data-div="4">
+                <div class="image--box">
+                  <a href="./clothDetail.html">
+                    <img class="product--img" src="../uikits/images/sweater2.jpg" alt="">
+                  </a>
+                </div>
+                <div class="cloth--rating">
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h3 class="title">Sweater 2</h3>
+                <p class="cloth--price">$ <span class="fontNumber unit--price">15.42</span></p>
+                <div class="cloth--colors">
+                  <div class="color--black">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="clothes--card--actions">
+                  <a href="./sweater2.html" class="active--btn cloth--card--btn">
+                    View Details
+                  </a>
+                  <p href="" class="clothes--card--buy"><i class="fa-solid fa-basket-shopping add--cart"></i></p>
+                </div>
+              </div>
+              <div class="clothes--card" data-cat="1" data-div="4">
+                <div class="image--box">
+                  <a href="./clothDetail.html">
+                    <img class="product--img" src="../uikits/images/sweater3.jpg" alt="">
+                  </a>
+                </div>
+                <div class="cloth--rating">
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h3 class="title">Sweater 3</h3>
+                <p class="cloth--price">$ <span class="fontNumber unit--price">20</span></p>
+                <div class="cloth--colors">
+                  <div class="color--black">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="clothes--card--actions">
+                  <a href="./sweater3.html" class="active--btn cloth--card--btn">
+                    View Details
+                  </a>
+                  <p href="" class="clothes--card--buy"><i class="fa-solid fa-basket-shopping add--cart"></i></p>
+                </div>
+              </div>
+              <div class="clothes--card" data-cat="3" data-div="5">
+                <div class="image--box">
+                  <a href="./clothDetail.html">
+                    <img class="product--img" src="../uikits/images/dress.jpg" alt="">
+                  </a>
+                </div>
+                <div class="cloth--rating">
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                </div>
+                <h3 class="title">Dress 1</h3>
+                <p class="cloth--price">$ <span class="fontNumber unit--price">16</span></p>
+                <div class="cloth--colors">
+                  <div class="color--black">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="clothes--card--actions">
+                  <a href="./dress1.html" class="active--btn cloth--card--btn">
+                    View Details
+                  </a>
+                  <p href="" class="clothes--card--buy"><i class="fa-solid fa-basket-shopping add--cart"></i></p>
+                </div>
+              </div>
+              <div class="clothes--card" data-cat="2" data-div="5">
+                <div class="image--box">
+                  <a href="./clothDetail.html">
+                    <img class="product--img" src="../uikits/images/dress2.jpg" alt="">
+                  </a>
+                </div>
+                <div class="cloth--rating">
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h3 class="title">Dress 2</h3>
+                <p class="cloth--price">$ <span class="fontNumber unit--price">50</span></p>
+                <div class="cloth--colors">
+                  <div class="color--black">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="clothes--card--actions">
+                  <a href="./dress2.html" class="active--btn cloth--card--btn">
+                    View Details
+                  </a>
+                  <p href="" class="clothes--card--buy"><i class="fa-solid fa-basket-shopping add--cart"></i></p>
+                </div>
+              </div>
+              <div class="clothes--card" data-cat="1" data-div="5">
+                <div class="image--box">
+                  <a href="./clothDetail.html">
+                    <img class="product--img" src="../uikits/images/dress3.jpg" alt="">
+                  </a>
+                </div>
+                <div class="cloth--rating">
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                </div>
+                <h3 class="title">Dress 3</h3>
+                <p class="cloth--price">$ <span class="fontNumber unit--price">60</span></p>
+                <div class="cloth--colors">
+                  <div class="color--black">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="clothes--card--actions">
+                  <a href="./dress3.html" class="active--btn cloth--card--btn">
+                    View Details
+                  </a>
+                  <p href="" class="clothes--card--buy"><i class="fa-solid fa-basket-shopping add--cart"></i></p>
+                </div>
+              </div>
+              <div class="clothes--card" data-cat="3" data-div="6">
+                <div class="image--box">
+                  <a href="./clothDetail.html">
+                    <img class="product--img" src="../uikits/images/pant.jpg" alt="">
+                  </a>
+                </div>
+                <div class="cloth--rating">
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h3 class="title">Pant 1</h3>
+                <p class="cloth--price">$ <span class="fontNumber unit--price">45.5</span></p>
+                <div class="cloth--colors">
+                  <div class="color--black">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="clothes--card--actions">
+                  <a href="./pant1.html" class="active--btn cloth--card--btn">
+                    View Details
+                  </a>
+                  <p href="" class="clothes--card--buy"><i class="fa-solid fa-basket-shopping add--cart"></i></p>
+                </div>
+              </div>
+              <div class="clothes--card" data-cat="2" data-div="6">
+                <div class="image--box">
+                  <a href="./clothDetail.html">
+                    <img class="product--img" src="../uikits/images/pant2.jpg" alt="">
+                  </a>
+                </div>
+                <div class="cloth--rating">
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                </div>
+                <h3 class="title">Pant 2</h3>
+                <p class="cloth--price">$ <span class="fontNumber unit--price">24</span></p>
+                <div class="cloth--colors">
+                  <div class="color--black">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="clothes--card--actions">
+                  <a href="./pant2.html" class="active--btn cloth--card--btn">
+                    View Details
+                  </a>
+                  <p href="" class="clothes--card--buy"><i class="fa-solid fa-basket-shopping add--cart"></i></p>
+                </div>
+              </div>
+              <div class="clothes--card" data-cat="1" data-div="6">
+                <div class="image--box">
+                  <a href="./clothDetail.html">
+                    <img class="product--img" src="../uikits/images/pant3.jpg" alt="">
+                  </a>
+                </div>
+                <div class="cloth--rating">
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h3 class="title">Pant 3</h3>
+                <p class="cloth--price">$ <span class="fontNumber unit--price">30.43</span></p>
+                <div class="cloth--colors">
+                  <div class="color--black">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="clothes--card--actions">
+                  <a href="./pant3.html" class="active--btn cloth--card--btn">
+                    View Details
+                  </a>
+                  <p href="" class="clothes--card--buy"><i class="fa-solid fa-basket-shopping add--cart"></i></p>
+                </div>
+              </div>
+              <div class="clothes--card" data-cat="3" data-div="8">
+                <div class="image--box">
+                  <a href="./clothDetail.html">
+                    <img class="product--img" src="../uikits/images/coat.jpg" alt="">
+                  </a>
+                </div>
+                <div class="cloth--rating">
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h3 class="title">Coat 1</h3>
+                <p class="cloth--price">$ <span class="fontNumber unit--price">28.4</span></p>
+                <div class="cloth--colors">
+                  <div class="color--black">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="clothes--card--actions">
+                  <a href="./coatJacket4.html" class="active--btn cloth--card--btn">
+                    View Details
+                  </a>
+                  <p href="" class="clothes--card--buy"><i class="fa-solid fa-basket-shopping add--cart"></i></p>
+                </div>
+              </div>
+              <div class="clothes--card" data-cat="2" data-div="8">
+                <div class="image--box">
+                  <a href="./clothDetail.html">
+                    <img class="product--img" src="../uikits/images/coat2.jpg" alt="">
+                  </a>
+                </div>
+                <div class="cloth--rating">
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h3 class="title">Coat 2</h3>
+                <p class="cloth--price">$ <span class="fontNumber unit--price">30</span></p>
+                <div class="cloth--colors">
+                  <div class="color--black">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="clothes--card--actions">
+                  <a href="./coatJacket5.html" class="active--btn cloth--card--btn">
+                    View Details
+                  </a>
+                  <p href="" class="clothes--card--buy add--cart"><i class="fa-solid fa-basket-shopping"></i></p>
+                </div>
+              </div>
+              <div class="clothes--card" data-cat="1" data-div="8">
+                <div class="image--box">
+                  <a href="./clothDetail.html">
+                    <img class="product--img" src="../uikits/images/coat3.jpg" alt="">
+                  </a>
+                </div>
+                <div class="cloth--rating">
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star color--main"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h3 class="title">Coat 3</h3>
+                <p class="cloth--price">$ <span class="fontNumber unit--price">23.6</span></p>
+                <div class="cloth--colors">
+                  <div class="color--black">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="clothes--card--actions">
+                  <a href="./coatJacket6.html" class="active--btn cloth--card--btn">
+                    View Details
+                  </a>
+                  <p href="" class="clothes--card--buy"><i class="fa-solid fa-basket-shopping add--cart"></i></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- shop popup box -->
+    <div class="shopPopUp--box">
+      <div class="shopPopUp--box--inner">
+          <i class="fa-solid fa-xmark" id="close--cart"></i>
+          <h3>Your cart</h3>
+          <div class="items">
+              
+              
+          </div>
+          <span>Total - $ <span class="fontNumber color--main total--price">0</span></span>
+          <button class="btn-buy">Buy now</button>
+      </div>
+    </div>
+    
+    <script src="../uikits/js/shopAfterLogin.js"></script>
+    <script src="../uikits/js/shopFilter.js"></script>
+    <script src="../uikits/js/shopNav.js"></script>
+    <script src="../uikits/js/clothDetailSetup.js"></script>
+  </body>
+</html>

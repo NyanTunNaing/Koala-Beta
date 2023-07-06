@@ -1,0 +1,232 @@
+.clothDetail--section{
+    width: 100%;
+    min-height: 100vh;
+    margin: 10vh 0 30px 0;
+    background-color: var(--color-light);
+}
+
+.clothDetail--section--inner{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.clothDetail--wrapper{
+    width: 100%;
+    height: auto;
+    margin: 13vh auto 30px auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.clothDetail--image{
+    width: 500px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.clothDetail--image img{
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.clothDetail--form{
+    margin: 30px 0;
+    width: 100%;
+}
+
+.clothDetail--container{
+    width: 500px;
+    height: auto;
+    padding: 30px 50px;
+}
+
+.clothDetail--box{
+    width: 100%;
+}
+
+.clothDetail--info{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.clothDetail--price{
+    width: 30%;
+}
+
+.clothDetail--rating{
+    width: 60%;
+}
+
+.clothDetail--size--box,
+.clothDetail--colors--box{
+    margin-top: 20px;
+    width: 100%;
+    height: 100px;
+    border-bottom: 1.5px solid var(--color-sub);
+}
+
+.clothDetail--size--heading,
+.colorDetail--colors--heading{
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: var(--fontsize-small);
+    font-weight: var(--fontweight-bold);
+}
+
+.clothDetail--sizes{
+    width: 440px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.clothDetail--sizes span{
+    font-size: var(--fontsize-small);
+    font-weight: var(--fontweight-bold);
+}
+
+.clothDetail--action{
+    width: 100%;
+    height: 75px;
+    border-bottom: 1.5px solid var(--color-sub);
+}
+
+.clothDetail--fav--btn{
+    margin: 20px 0;
+    width: 100%;
+    height: 55px;
+    cursor: pointer;
+}
+
+.clothDetail--fav--btn p{
+    display: block;
+    width: 100%;
+    text-align: center;
+    line-height: 55px;
+    font-size: var(--fontsize-small);
+    font-weight: var(--fontweight-bold);
+    letter-spacing: 1px;
+}
+
+.clothDetail--fav--btn p i{
+    margin-right: 10px;
+}
+
+.clothDetail--fav--btn p{
+    color: var(--color-sub);
+}
+
+.clothDetail--fav--btn:hover i{
+    color: var(--color-heart);
+    animation: animatedHeart 1s infinite;
+}
+
+.clothDetail--description{
+    margin: 30px 0;
+    width: 100%;
+    height: auto;
+    border-bottom: 1.5px solid var(--color-sub);
+}
+
+.clothDetail--description h4{
+    width: 100%;
+    height: 35px;
+    font-size: var(--fontsize-exsmall);
+    font-weight: var(--fontweight-bold);
+    color: var(--color-sub);
+    letter-spacing: 1px;
+}
+
+.clothDetail--description p{
+    margin: 0 auto;
+    margin-bottom: 20px;
+    width: 95%;
+    height: auto;
+    line-height: 20px;
+}
+
+.clothReview--wrapper,
+.moreCloth--wrapper{
+    width: 85%;
+    height: auto;
+    margin: 30px auto;
+    border-bottom: 1.5px solid var(--color-sub);
+}
+
+.clothReview--heading,
+.moreCloth--heading{
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.clothReview--heading h3,
+.moreCloth--heading h3{
+    height: 50px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.clothReview--heading h3::before,
+.clothReview--heading h3::after,
+.moreCloth--heading h3::before,
+.moreCloth--heading h3::after{
+    content: '';
+    display: inline-block;
+    width: 150px;
+    height: 0.8px;
+    background-color: var(--color-sub);
+    margin-bottom: 5px;
+}
+
+.clothReview--heading h3::before,
+.moreCloth--heading h3::before{
+    margin-right: 10px;
+}
+
+.clothReview--heading h3::after,
+.moreCloth--heading h3::after{
+    margin-left: 10px;
+}
+
+.clothReview--card{
+    width: 500px;
+    padding: 20px 20px;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.clothReview--card img{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.clothReview--mentor{
+    width: 80%;
+}
+
+.clothReview--mentor h4{
+    width: 100%;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    color: var(--color-form);
+}
+
+.clothReview--mentor p{
+    width: 90%;
+    line-height: 20px;
+}

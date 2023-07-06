@@ -1,0 +1,41 @@
+/* Koala Fashion Project */
+
+
+/* font style (Raleway google fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+/* font style for number (Poppins google fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+
+/* font for advertisement (Itim google fonts) */
+@import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+
+/* UI styles */
+@import url('./_varibales.css');
+@import url('./main.css');
+@import url('./_layout.css');
+@import url('./_common.css');
+@import url('./_animation.css');
+@import url('./_form.css');
+@import url('./_alertMsg.css');
+@import url('./_nav.css');
+@import url('./_header.css');
+@import url('./_aboutus.css');
+@import url('./_advertise.css');
+@import url('./_gallery.css');
+@import url('./_shop.css');
+@import url('./_feedback.css');
+@import url('./_review.css');
+@import url('./_contact.css');
+@import url('./_profile.css');
+@import url('./_profileSetup.css');
+@import url('./_clothDetail.css');
+@import url('./_loginSignup.css');
+@import url('./js_classes.css');
+@import url('./_shopPopUpBox.css');
+@import url('./_preloader.css');
+@import url('./_voucher.css');
+@import url('./_responsive.css');

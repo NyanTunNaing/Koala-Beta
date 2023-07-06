@@ -1,0 +1,125 @@
+.profile--section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--color-light-dark);
+}
+
+.profile--section--inner{
+    width: 80%;
+    height: auto;
+    margin: 15vh auto 0 auto;
+}
+
+.profile--container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.profile--info{
+    width: 290px;
+    height: auto;
+    padding: 40px 20px;
+    background-color: var(--color-light);
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile--info > a{
+    display: block;
+    width: 80px;
+    height: 30px;
+    padding: 8px;
+    text-align: center;
+    background-color: var(--color-dialogueBg);
+    font-size: var(--fontsize-exsmall);
+    font-weight: var(--fontweight-bold);
+    color: var(--color-sub);
+    border-radius: 15px;
+}
+
+.profile--content{
+    width: 200px;
+    text-align: center;
+}
+
+#profileImg{
+    width: 150px;
+    height: 150px;
+    padding: 2.5px;
+    object-fit: cover;
+    border: 2px solid var(--color-main);
+    border-radius: 50%;
+}
+
+.profile--content > h4{
+    margin-top: 10px;
+    letter-spacing: 0.5px;
+    font-size: var(--fontsize-small);
+    font-weight: var(--fontweight-bold);
+    color: var(--color-sub);
+}
+
+.mentor--social--links{
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.fav--cards--container{
+    width: 90%;
+    height: auto;
+    margin: 40px auto 0 auto;
+}
+
+.favCard--heading{
+    width: 280px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.favCard--heading h4{
+    text-align: center;
+    font-size: var(--fontsize-small);
+    font-weight: var(--fontweight-bold);
+    color: var(--color-main);
+    text-transform: uppercase;
+}
+
+.heading--outline{
+    width: 280px;
+    height: 20px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading--outline span{
+    display: inline-block;
+    width: 130px;
+    height: 2px;
+    background-color: var(--color-main);
+}
+
+.fav--cards--wrapper{
+    width: 100%;
+    min-height: 70vh;
+    margin: 30px 0;
+    text-align: center;
+}
+
+.fav--card{
+    width: 300px;
+    height: auto;
+    margin-bottom: 30px;
+}

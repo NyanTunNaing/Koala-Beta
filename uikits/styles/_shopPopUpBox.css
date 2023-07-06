@@ -1,0 +1,133 @@
+.shopPopUp--box{
+    width: 340px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    border-left: 2px solid var(--color-formBorder);
+    background-color: var(--color-light);
+    z-index: 12;
+    transition: 0.3s;
+    overflow-y: scroll;
+}
+
+.shopPopUp--box--inner{
+    margin: 15px auto;
+    width: 95%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.shopPopUp--box--inner > i{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    line-height: 40px;
+    text-align: center;
+    font-size: var(--fontsize-semilg);
+    font-weight: var(--fontweight-bold);
+    color: var(--color-sub);
+    cursor: pointer;
+    transition: all 0.8s ease-in-out;
+}
+
+.shopPopUp--box--inner h3{
+    text-align: center;
+    font-size: var(--fontsize-medium);
+    font-weight: var(--fontweight-bold);
+    color: var(--color-sub);
+}
+
+.items{
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    padding: 0 10px;
+    border-bottom: 1.5px solid var(--color-sub);
+}
+
+.item{
+    width: 100%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.item img{
+    width: 80px;
+}
+
+.item--info{
+    width: 175px;
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.item--info h4,
+.item--info span{
+    font-size: var(--fontsize-small);
+    font-weight: var(--fontweight-bold);
+}
+
+.quantity--adjust{
+    width: 40%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.quantity--adjust a{
+    font-size: var(--fontsize-semilg);
+    font-weight: var(--fontweight-bold);
+    color: var(--color-sub);
+}
+
+.quantity--adjust span{
+    font-size: var(--fontsize-medium);
+    font-weight: var(--fontweight-bold);
+    color: var(--color-main);
+}
+
+.item > i{
+    width: 15px;
+    font-size: var(--fontsize-small);
+    font-weight: var(--fontweight-bold);
+    color: var(--color-error);
+    cursor: pointer;
+}
+
+.shopPopUp--box--inner > span{
+    display: block;
+    min-width: 100px;
+    height: 50px;
+    margin-left: auto;
+    margin-top: 10px;
+    font-size: var(--fontsize-small);
+    font-weight: var(--fontweight-bold);
+    color: var(--color-sub);
+}
+
+.shopPopUp--box--inner button{
+    border: 1px solid var(--color-main);
+    background: transparent;
+    color: var(--color-light);
+    cursor: pointer;
+    line-height: 40px;
+    font-size: var(--fontsize-exsmall);
+    font-weight: var(--fontweight-bold);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 0 auto;
+    width: 140px;
+    height: 50px;
+    background-color: var(--color-main);
+    text-align: center; 
+}

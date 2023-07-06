@@ -1,0 +1,66 @@
+.feedback--section{
+    min-height: 80vh;
+    width: 100%;
+    background-image: url(../images/feedback.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.feedback--section--inner{
+    width: 100%;
+    min-height: 80vh;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.feedback--section--wrapper{
+    width: 100%;
+}
+
+.feedback--heading,
+.feedback--heading span{
+    color: var(--color-light);
+}
+
+.feedback--heading{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.feedback--card--wrapper{
+    max-width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.feedback--card i{
+    font-size: var(--fontsize-lg);
+    color: var(--color-main);
+    transition: all 0.5s;
+}
+
+.feedback--card h3{
+    font-size: var(--fontsize-lg);
+    padding: 15px 0 0 0;
+}
+
+.feedback--card p{
+    padding: 10px 0;
+    color: var(--color-light) !important;
+}
+
+.feedback--card:hover{
+    background-color: var(--color-main);
+}
+
+.feedback--card:hover i{
+    transform: translateY(-15px);
+    color: var(--color-sub);
+}

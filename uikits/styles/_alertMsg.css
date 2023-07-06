@@ -1,0 +1,44 @@
+.alert--success,
+.alert--comfirm{
+    background-color: var(--color-successBg);
+}
+
+.alert--password--error,
+.alert--noMatch--error,
+.alert--buy--error{
+    background-color: var(--color-errorBg);
+}
+
+.alert--warning{
+    background-color: var(--color-warningBg);
+}
+
+.alert--success > .alert--message,
+.alert--comfirm > .alert--message{
+    color: var(--color-success);
+}
+
+.alert--password--error > .alert--message,
+.alert--noMatch--error > .alert--message,
+.alert--buy--error > .alert--message{
+    color: var(--color-error);
+}
+
+.alert--warning > .alert--message{
+    color: var(--color-main);
+}
+
+.alert--message{
+    font-size: var(--fontsize-exsmall);
+    font-weight: var(--fontweight-bold);
+    letter-spacing: 0.5px;
+}
+
+.alert--close{
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: var(--color-form);
+    font-weight: var(--fontweight-bold);
+}
+

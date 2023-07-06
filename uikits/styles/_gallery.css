@@ -1,0 +1,130 @@
+.gallery--section{
+    width: 100%;
+    height: auto;
+    background-color: var(--color-light);
+}
+
+.gallery--section--inner{
+    width: 100%;
+    height: auto;
+    margin: 60px 0;
+}
+
+.gallery--content{
+    width: 75%;
+    height: auto;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.gallery--heading{
+    margin: 30px 0;
+    height: 150px;
+}
+
+.gallery--navs{
+    width: 80%;
+    margin: 30px 0 0 0;
+}
+
+.gallery--nav{
+    width: 35%;
+    display: flex;
+    gap: 50px;
+}
+
+.gallery--nav p{
+    cursor: pointer;
+}
+
+.image--wrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image--wrapper .image--box{
+    width: 25%;
+    height: 340px;
+    transition: all 1s;
+    position: relative;
+    overflow: hidden;
+}
+
+.image--box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1s;
+}
+
+.imageHover--box{
+    position: absolute;
+    width: 100%;
+    height: 340px;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    transition: all 0.8s;
+}
+
+.imageHover--box--content{
+    width: 80%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.imageHover--box--content h4{
+    height: 30px;
+    line-height: 40px;
+    color: var(--color-main);
+    font-size: var(--fontsize-medium);
+    font-weight: var(--fontweight-bold);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.imageHover--box--content span{
+    display: block;
+    margin: 0 auto;
+    width: 28px;
+    height: 6px;
+    border-top: 1.5px solid var(--color-light);
+    border-bottom: 1.5px solid var(--color-light);
+}
+
+.imageHover--box--content p{
+    height: 30px;
+    color: var(--color-form);
+    font-size: var(--fontsize-exsmall);
+    font-weight: var(--fontweight-bold);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.image--active--btn{
+    width: 100%;
+    text-align: center;
+}
+
+.image--active--btn > a{
+    text-transform: initial;
+    color: var(--color-light);
+    border-bottom: 2.3px solid var(--color-light);
+}
+
+.imageHover--box:hover{
+    opacity: 1;
+}
+
+.image--box:hover > img{
+    transform: scale(1.1);
+}

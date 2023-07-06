@@ -1,0 +1,213 @@
+.login--signup--container{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.login--signup--container::before{
+    content: '';
+    position: absolute;
+    width: 2000px;
+    height: 2000px;
+    border-radius: 50%;
+    background: linear-gradient(-45deg, var(--color-main), var(--color-main));
+    top: -10%;
+    right: 48%;
+    transform: translateY(-50%);
+    z-index: 6;
+    transition: 1.5s ease-in-out;
+}
+
+.forms--container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.login--signup{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: 1fr;
+    z-index: 5;
+    transition: 1s 0.7s ease-in-out;
+}
+
+.form{
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    transition: 1s 0.5s ease-in-out;
+}
+
+.login--form{
+    z-index: 2;
+}
+
+.signup--form{
+    z-index: 1;
+    opacity: 0;
+}
+
+.login--form > h2,
+.signup--form > h2{
+    color: var(--color-main);
+    font-size: var(--fontsize-semilg);
+    font-weight: var(--fontweight-bold);
+}
+
+.login--form > .form--field,
+.signup--form > .form--field{
+    width: 340px;
+}
+
+.login--form p,
+.signup--form p{
+    margin: 20px 0;
+}
+
+.social--medias{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.panels--container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.panel{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    z-index: 7;
+}
+
+.left--panel{
+    pointer-events: all;
+    padding: 30px 17% 25px 12%;
+}
+
+.left--panelContent,
+.right--panelContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    color: var(--color-light);
+    transition: all 1s 0.6s ease-in-out;
+}
+
+.right--panel{
+    pointer-events: none;
+    padding: 30px 12% 25px 17%;
+}
+
+.panel h3{
+    font-size: var(--fontsize-medium);
+    font-weight: var(--fontweight-bold);
+    text-align: center;
+}
+
+.left--panelContent > p,
+.right--panelContent > p{
+    text-align: center;
+    color: var(--color-light);
+}
+
+.left--panelContent > button,
+.right--panelContent > button{
+    cursor: pointer;
+}
+
+.panel > img{
+    width: 100%;
+    transition: all 1s 0.8s ease-in-out;
+}
+
+.right--panelContent,
+.right--panel > img{
+    transform: translateX(800px);
+}
+
+.backHome--box{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 11;
+}
+
+.backHome--box a{
+    font-size: var(--fontsize-small);
+    font-weight: var(--fontweight-bold);
+    color: var(--color-light);
+    transition: 1s ease-in-out;
+}
+
+.backHome--box i{
+    margin-right: 2px;
+    transition: 0.5s ease-in-out;
+}
+
+.backHome--box:hover i{
+    margin-right: 5px;
+}
+
+/* animation */
+
+.login--signup--container.sign--up--mode::before{
+    transform: translate(100%, -50%);
+    right: 52%;
+}
+
+.login--signup--container.sign--up--mode .left--panel .left--panelContent,
+.login--signup--container.sign--up--mode .left--panel > img{
+    transform: translateX(-800px);
+}
+
+.login--signup--container.sign--up--mode .right--panel .right--panelContent,
+.login--signup--container.sign--up--mode .right--panel > img{
+    transform: translateX(0px);
+}
+
+.login--signup--container.sign--up--mode .left--panel{
+    pointer-events: none;
+}
+
+.login--signup--container.sign--up--mode .right--panel{
+    pointer-events: all;
+}
+
+.login--signup--container.sign--up--mode .login--signup{
+    left: 25%;
+}
+
+.login--signup--container.sign--up--mode .login--form{
+    z-index: 1;
+    opacity: 0;
+}
+
+.login--signup--container.sign--up--mode .signup--form{
+    z-index: 2;
+    opacity: 1;
+}
+
+.login--signup--container.sign--up--mode .backHome--box a{
+    color: var(--color-main);
+}

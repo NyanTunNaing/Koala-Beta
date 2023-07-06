@@ -1,0 +1,99 @@
+.koala--box{
+    opacity: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-light);
+    animation: preloader 4.8s 1;
+}
+
+.welcome--box{
+    opacity: 0;
+    position: absolute;
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: var(--color-dialogueBg);
+    animation: welcomeBox 1.2s 2.4s 1;
+}
+
+.welcome--box::after{
+    content: '';
+    margin-left: auto;
+    margin-right: 20px;
+    display: block;
+    width: 0px;
+    background-color: var(--color-dialogueBg);
+    border: 15px solid var(--color-dialogueBg);
+    border-left-color: var(--color-light);
+    border-right-color: var(--color-light);
+    border-bottom-color: var(--color-light);
+}
+
+.welcome--box  i{
+    color: var(--color-heart);
+}
+
+.welcome--box h5{
+    text-align: center;
+    line-height: 50px;
+}
+
+.koala{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    animation: koala 1.5s 2.2s 1;
+}
+
+.koala--head{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--color-main);
+    position: absolute;
+    left: 102px;
+    top: 15px;
+    z-index: 2;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.koala--nose{
+    width: 15px;
+    height: 30px;
+    border-radius: 20px;
+    background-color: var(--color-sub);
+}
+
+.koala--eye{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: var(--color-sub);
+    animation: koalaEye 0.5s 4;
+}
+
+.koala--ears{
+    z-index: 1;
+    width: 165px;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.koala--ear{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: var(--color-main);
+}

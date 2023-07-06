@@ -1,0 +1,35 @@
+:root{
+    --color-main: #f4c613;
+    --color-sub: #000000;
+    --color-text: #737373;
+    --color-light: #ffffff;
+    --color-light-dark: #f4f4f4;
+    --color-form: #FD8B7B;
+    --color-formBorder: #e5e7eb;
+    --color-formBg: #fff8f6;
+    --color-dialogueBg: #ffffb7;
+    --color-facebook: #3b5998;
+    --color-instagram: #C13584;
+    --color-telegram: #0088CC;
+    --color-twitter: #00acee;
+    --color-google: #DB4437;
+    --color-heart: #F8312F;
+    --color-success: #359e64;
+    --color-successBg: #def8e8;
+    --color-error: #fc4b0b;
+    --color-errorBg: #fff2ee;
+    --color-warningBg: #fff7d9;
+    --fontsize-exsmall: 12.5px;
+    --fontsize-small: 15px;
+    --fontsize-medium: 18px;
+    --fontsize-semilg: 25px;
+    --fontsize-lg: 35px;
+    --fontsize-exlg: 60px;
+    --fontsize--phlg: 35px;
+    --fontweight-exregular: 200;
+    --fontweight-regular: 300;
+    --fontweight-medium: 600;
+    --fontweight-bold: 700;
+    --font-number: 'Poppins', sans-serif;
+    --font--advertise: 'Itim', cursive;
+}

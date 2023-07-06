@@ -1,0 +1,116 @@
+.formTemplate--section{
+    width: 100%;
+    min-height: 100vh;
+    /* filter: blur(4px); */
+    background-color: var(--color-light);
+}
+
+.formTemplate__inner{
+    width: 57%;
+    min-height: 80vh;
+    margin: 13vh auto 50px auto;
+    padding: 50px;
+    border: 2px solid var(--color-formBorder);
+    border-radius: 5px;
+}
+
+form{
+    width: 100%;
+    min-height: 10vh;
+    margin: 0 auto;
+}
+
+.form--field{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.form--field  label{
+    font-size: var(--fontsize-exsmall);
+    font-weight: var(--fontweight-bold);
+    letter-spacing: 0.5px;
+}
+
+.form--field input::placeholder,
+.form--field textarea::placeholder{
+    font-size: var(--fontsize-exsmall);
+    font-weight: var(--fontweight-bold);
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'],
+input[type='date'],
+input[type='tel'],
+input[type='file'],
+textarea,
+select{
+    margin-top: 5px;
+    width: 100%;
+    padding: 10px 15px;
+    color: var(--color-sub);
+    font-size: var(--fontsize-exsmall);
+    font-weight: var(--fontweight-bold);
+    letter-spacing: 0.7px;
+    border: 2px solid var(--color-formBorder);
+    border-radius: 5px;
+    background-color: var(--color-formBg);
+    transition: all 0.6s ease-in-out;
+    resize: none;
+}
+
+input[type='file']{
+    cursor: pointer;
+    width: 215px;
+}
+
+input[type='file']::-webkit-file-upload-button{
+    visibility: hidden;
+}
+
+input[type='file']::before{
+    content: 'Upload your profile picture';
+    display: inline-block;
+    user-select: none;
+    outline: none;
+}
+
+.changeContent::before{
+    content: 'Click here to change' !important;
+    font-size: var(--fontsize-exsmall);
+    font-weight: var(--fontweight-bold);
+    letter-spacing: 0.7px;
+}
+
+textarea{
+    height: 120px;
+}
+
+input[type='submit']{
+    margin-top: 30px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type='text']:active,
+input[type='email']:active,
+input[type='password']:active,
+input[type='date']:active,
+input[type='tel']:active,
+input[type='text']:focus,
+input[type='email']:focus,
+input[type='password']:focus,
+input[type='date']:focus,
+input[type='tel']:focus,
+textarea:active,
+textarea:focus,
+select:active,
+select:focus{
+    outline: none;
+    border: 2px solid var(--color-form);
+}
+
+/* input[type='radio']:checked{
+    color: var(--color-main);
+    border: 1.5px solid var(--color-main);
+} */

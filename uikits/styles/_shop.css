@@ -1,0 +1,341 @@
+.shop--header{
+    width: 100%;
+    min-height: 10vh;
+    background-color: var(--color-light);
+    position: fixed;
+    top: 0;
+    z-index: 10;
+}
+
+.shop--logo--container{
+    width: 60%;
+    height: 10vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.shop--logo{
+    width: 220px;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+
+.shop--logo i{
+    display: none;
+}
+
+.shop--logo img{
+    width: 150px;
+    height: 80px;
+}
+
+.shop--search--container{
+    width: 50%;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+}
+
+.shop--search--container > a{
+    font-size: var(--fontsize-exsmall);
+    font-weight: var(--fontweight-bold);
+    color: var(--color-sub);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: 0.8s;
+}
+
+.shop--search--container > a:hover{
+    color: var(--color-main);
+}
+
+.shop--search--container img{
+    width: 50px;
+    height: 50px;
+    padding: 1.5px;
+    border: 2px solid var(--color-main);
+    border-radius: 50%;
+}
+
+.shop--nav--container{
+    width: 100%;
+    height: 8vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.shop--nav--btns a{
+    color: var(--color-sub);
+}
+
+.shop--section{
+    width: 100%;
+    min-height: 100vh;
+    margin-top: 10vh;
+}
+
+.url--box{
+    position: fixed;
+    z-index: 11;
+    width: 100%;
+    height: 9vh;
+    background-color: var(--color-light);
+    border-bottom: 1.5px solid var(--color-formBorder);
+    box-shadow: 5px 5px 5px rgb(175, 175, 175);
+}
+
+.url{
+    left: 70px;
+    width: 80%;
+    min-height: 8vh;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.url p{
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.url p a{
+    font-size: var(--fontsize-exsmall);
+    text-transform: uppercase;
+    color: var(--color-sub);
+    letter-spacing: 1px;
+}
+
+.url p span{
+    font-weight: var(--fontweight-bold);
+    color: var(--color-form);
+}
+
+.profile--url{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logout--box{
+    width: 100px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    cursor: pointer;
+}
+
+.logout--btn{
+    line-height: 60px;
+    font-size: var(--fontweight-exlg);
+    font-weight: var(--fontweight-bold);
+    color: var(--color-main);
+}
+
+.logout--box > p{
+    font-size: var(--fontsize-exsmall);
+    font-weight: var(--fontweight-bold);
+    color: var(--color-main);
+    transition: all 0.8s ease-in-out;
+}
+
+.logout--box:hover p{
+    transform: translateX(10px);
+}
+
+.shop--section--inner{
+    width: 88%;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 15vh;
+}
+
+.shop--wrapper{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.shop--nav--box{
+    width: 250px;
+    height: auto;
+}
+
+.shop--nav{
+    width: 220px;
+    height: auto;
+    position: fixed;
+}
+
+.shop--nav i{
+    display: none;
+}
+
+.shop--nav--firstPiroty,
+.shop--nav--common{
+    width: 100%;
+    height: auto;
+}
+
+.shop--nav--firstPiroty h3,
+.shop--nav--common h3{
+    font-size: var(--fontsize-exsmall);
+    font-weight: var(--fontweight-bold);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    width: 100%;
+    height: 35px;
+    margin-top: 20px;
+}
+
+.shop--features--inner--overall{
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.shop--features--inner--overall p{
+    width: 100%;
+    height: 33px;
+    line-height: 33px;
+    letter-spacing: 1px;
+    padding: 0 0 0 20px;
+    font-size: var(--fontsize-exsmall);
+    font-weight: var(--fontweight-medium);
+    color: var(--color-sub);
+    border-radius: 5px;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.shop--features--inner--overall p:hover {
+    background-color: var(--color-light-dark);
+    color: var(--color-main);
+}
+
+.clothes--card--container{
+    width: 1050px;
+    height: auto;
+}
+
+/* card wrapper */
+.clothes--card--wrapper{
+    margin-bottom: 50px;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.clothes--card{
+    width: 300px;
+    height: auto;
+    margin-bottom: 30px;
+}
+
+.image--box{
+    width: 100%;
+    height: 350px;
+    position: relative;
+}
+
+.clothes--card img{
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cloth--rating{
+    width: 100%;
+    height: 50px;
+}
+
+.cloth--rating i{
+    color: var(--color-sub);
+    font-size: var(--fontsize-small);
+    line-height: 50px;
+}
+
+.clothes--card h3{
+    width: 100%;
+    height: auto;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: var(--fontsize-small);
+    font-weight: var(--fontweight-medium);
+}
+
+.clothes--card p{
+    width: 100%;
+    height: 25px;
+}
+
+.cloth--price,
+.cloth--sale{
+    line-height: 25px;
+    font-size: var(--fontsize-small);
+    font-weight: var(--fontweight-bold);
+}
+
+.cloth--price{
+    color: var(--color-sub);
+}
+
+.cloth--sale{
+    color: var(--color-main);
+}
+
+.cloth--colors{
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.clothes--card--actions{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cloth--card--btn{
+    text-transform: none;
+}
+
+p.clothes--card--buy{
+    width: 38px;
+    height: 38px;
+    background-color: var(--color-main);
+    text-align: center;
+}
+
+.clothes--card--buy{
+    width: 38px;
+    height: 38px;
+    background-color: var(--color-main);
+    text-align: center;
+}
+
+.clothes--card--buy i{
+    color: var(--color-light);
+    line-height: 38px;
+    font-size: var(--fontsize-small);
+}
